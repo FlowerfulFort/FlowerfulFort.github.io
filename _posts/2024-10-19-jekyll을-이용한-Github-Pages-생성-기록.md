@@ -1,5 +1,5 @@
 ---
-title: "jekyll을 이용한 Github Pages 생성 기록"
+title: "Jekyll을 이용한 Github Pages 생성 기록"
 date: 2024-10-19 21:50:59 +0900
 categories: Jekyll
 tags: [Jekyll, Github Pages]
