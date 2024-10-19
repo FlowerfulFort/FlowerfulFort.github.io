@@ -1,7 +1,8 @@
 ---
 title: "jekyll을 이용한 Github Pages 생성 기록"
 date: 2024-10-19 21:50:59 +0900
-categories: jekyll
+categories: Jekyll
+tags: [Jekyll, Github Pages]
 ---
 
 jekyll을 이용하여 블로그를 생성하고 싶다면 먼저 ruby 환경이 필요하다. 분명 jekyll 사이트에서는 준비에서 실행까지 몇초만에 끝난다고 하지만 ruby 환경이 없다면 전혀 그렇지 않다...
