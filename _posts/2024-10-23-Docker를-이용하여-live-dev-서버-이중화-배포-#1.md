@@ -1,6 +1,6 @@
 ---
 title: "Docker를 이용하여 live, dev 서버 이중화 배포 #1"
-date: 2024-10-22 09:10:00 +0900
+date: 2024-10-23 09:10:00 +0900
 categories: DevOps
 tags: [Spring Boot, Java, Docker, DevOps, CI/CD]
 ---
@@ -129,3 +129,5 @@ $ curl http://eureka
 `Dockerfile`과 `startup.sh`정의가 끝났으니 브랜치에 푸쉬해주면 사전 작업은 끝난다.
 
 다음에는 Github Actions workflow를 수정하여 master와 develop의 행동을 구분해보자.
+
+[다음](/devops/Docker를-이용하여-live-dev-서버-이중화-배포-2)

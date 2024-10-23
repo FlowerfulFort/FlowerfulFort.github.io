@@ -5,7 +5,7 @@ categories: DevOps
 tags: [Spring Boot, Java, Docker, DevOps, CI/CD]
 ---
 
-[여기](/devops/Docker를-이용하여-live-dev-서버-이중화-배포-#1)에서 계속된다.
+[여기](/devops/Docker를-이용하여-live-dev-서버-이중화-배포-1)에서 계속된다.
 
 [이전](/devops/Github-Actions를-이용하여-Spring-Boot-배포-자동화-환경-구축하기/)에서 이미 `master` 브랜치에 대응하는 자동 배포 workflow를 만들었다. 이를 조금 더 확장해 볼 것이다.
 
