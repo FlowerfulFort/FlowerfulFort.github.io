@@ -104,11 +104,11 @@ docker build -t $image_name-$container_postfix .
 
 # 위에서 설정한 포트 수 만큼 컨테이너 생성
 for ((i=0; i<${#server_port[@]}; i++)); do
-    docker run -d --name $container_name-$i \ 
-        --network $network_bridge \ 
-        --env SPRING_PROFILE=$spring_env \ 
-        --env SERVER_PORT=${server_port[i]} \ 
-        -p ${server_port[i]}:${server_port[i]} \ 
+    docker run -d --name $container_name-$i \
+        --network $network_bridge \
+        --env SPRING_PROFILE=$spring_env \
+        --env SERVER_PORT=${server_port[i]} \
+        -p ${server_port[i]}:${server_port[i]} \
         $image_name-$container_postfix
 done
 
