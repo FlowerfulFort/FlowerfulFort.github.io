@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot에서 파일 로그 설정"
 date: 2024-10-26 14:57:00 +0900
-categories: Spring Boot
+categories: ["Spring Boot"]
 tags: [Spring Boot, Java, Logback]
 ---
 
