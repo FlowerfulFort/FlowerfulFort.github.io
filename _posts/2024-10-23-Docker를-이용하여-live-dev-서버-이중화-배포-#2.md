@@ -27,6 +27,7 @@ if: github.ref == 'refs/heads/branch-name'
 
 이를 반영하여 scp-action과 ssh-action을 추가해주자. 기존에 있었던 action 들은 master로 조건을 주었다.
 
+{% raw %}
 ```yaml
   steps:
   ...
@@ -57,6 +58,7 @@ if: github.ref == 'refs/heads/branch-name'
         script_stop: true
         script: "~/app/front/dev/startup.sh --dev"
 ```
+{% endraw %}
 
 master와 develop에 대한 action을 모두 정의하였으면 커밋하고 실제로 작동이 되는지 Actions 탭에서 확인할 수 있다.
 

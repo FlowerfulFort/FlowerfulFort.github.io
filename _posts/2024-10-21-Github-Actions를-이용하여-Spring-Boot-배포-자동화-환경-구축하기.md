@@ -60,6 +60,7 @@ on:
 
 우리가 원하는 것은 빌드에 한정된 것이 아닌, 서버로 배포까지가 목적이다. 배포를 위한 step을 만들기 위해서 Actions 마켓플레이스에 등록된 applyboy/scp-action, appleboy/ssh-action을 사용한다.
 
+{% raw %}
 ```yaml
   steps:
 
@@ -86,6 +87,8 @@ on:
       script_stop: true
       script: "./startup.sh"  # ssh에서 실행할 명령.
 ```
+{% endraw %}
+
 SSH에 필요한 값들은 [여기](/devops/Github-Actions를-위한-사전작업-Actions-secret/)에서 미리 할당한 키값들을 넣는다.
 
 서버에는 배포된 애플리케이션을 실행하는 스크립트를 startup.sh로 저장해 놓았다.
