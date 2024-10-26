@@ -30,7 +30,7 @@ if: github.ref == 'refs/heads/branch-name'
 {% raw %}
 ```yaml
   steps:
-  ...
+...
 
     - name: upload file develop
       uses: appleboy/scp-action@master
