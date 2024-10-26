@@ -10,7 +10,8 @@ tags: [Spring Boot, Java, Docker, DevOps, CI/CD]
 [이전](/devops/Github-Actions를-이용하여-Spring-Boot-배포-자동화-환경-구축하기/)에서 이미 `master` 브랜치에 대응하는 자동 배포 workflow를 만들었다. 이를 조금 더 확장해 볼 것이다.
 
 먼저, develop 브랜치에도 대응이 되도록 push와 pull_request 모두에 `develop` 브랜치를 넣는다.
-```yaml maven.yml
+
+```yaml
 on:
   push:
     branches: [ "master", "develop" ]
@@ -19,13 +20,14 @@ on:
 ```
 
 브랜치별로 다른 행동을 주기 위해서는 해당 step에 다음 항목을 추가해야 한다.
+
 ```yaml
 if: github.ref == 'refs/heads/branch-name'
 ```
 
 이를 반영하여 scp-action과 ssh-action을 추가해주자. 기존에 있었던 action 들은 master로 조건을 주었다.
 
-```yaml maven.yml
+```yaml
   steps:
   ...
 
