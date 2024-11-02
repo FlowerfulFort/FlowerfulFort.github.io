@@ -102,6 +102,13 @@ public class RedirectException extends RuntimeException {
         super(e);
         this.redirect = redirectTo;
     }
+
+    // 성능 개선을 위한 fillInStackTrace 재정의
+    // 참조: https://meetup.nhncloud.com/posts/47
+    @Override
+    public synchronized Throwable fillInStackTrace() {
+        return this;
+    }
 }
 
 @ControllerAdvice
@@ -117,6 +124,9 @@ public class ExceptionControllerAdvice {
 ```
 
 예외에서 redirect 주소와, Apache commons lang3 패키지의 `ExceptionUtils`를 이용해 Cause exception의 메시지를 꺼내 Model attribute로 사용한다.
+
+`fillInStackTrace()`를 재정의 하였는데, 자바의 Exception은 생성될때 스택 추적 로그를 생성한다.
+이 예외에서 스택로그를 추적할 이유는 없고 자바는 스택 로그를 쌓을 때 많은 비용을 소모하므로 재정의하여 성능을 개선한다.
 
 Thymeleaf 기준으로, 다음과 같은 간단한 Alert 메시지와 함께 리디렉트를 할 수 있다.
 
