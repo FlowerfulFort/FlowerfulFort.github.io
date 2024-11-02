@@ -264,7 +264,7 @@ insert into student (id, name, department_id)
 values (1, '홍길동', 1), (2, '김아무개', 2);
 ```
 
-@Sql과 AssertJ를 사용하여 테스트코드를 다음과 같이 짤 수 있다.
+@Sql과 AssertJ를 사용하여 findById()를 검증하는 테스트코드를 다음과 같이 짤 수 있다.
 
 ```java
 @DataJpaTest
