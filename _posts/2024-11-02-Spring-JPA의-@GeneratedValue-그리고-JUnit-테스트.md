@@ -143,7 +143,7 @@ public <S extends T> S save(S entity) {
 
 또, 임의로 비어있는 id값을 부여한*─비록 @GeneratedValue에 의해 무시되었지만─* entity도 merge()가 실행된다. 따라서 merge()는 insert와 update 구문 모두 생성할 수 있음을 알 수 있다.
 
-<h3>결론</h4>
+<h3>결론</h3>
 
 JpaRepository를 테스트하기 위해 테스트 데이터를 생성해야하고, 해당 테스트들이 인조키 ID에 의존하는 테스트라면 높은 확률로 테스트가 진행되지 않을 것이다.
 
