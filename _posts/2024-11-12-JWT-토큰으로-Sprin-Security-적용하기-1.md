@@ -1,5 +1,5 @@
 ---
-title: "JWT 토큰으로 Spring Security 적용하기"
+title: "JWT 토큰으로 Spring Security 적용하기 #1"
 date: 2024-11-12 09:30:00 +0900
 categories: ["Spring Boot"]
 tags: [Spring Boot, JWT, Spring Security]
@@ -170,4 +170,4 @@ Rest API 서버에서 도움이 안되는 각종 Security 설정들을 꺼버리
     }
 ```
 
-그러나 위에서 원했던 Custom user detail을 적용하지는 못했다. 이에 대해서는 다음에 다룬다.
+그러나 위에서 원했던 Custom user detail을 적용하지는 못했다. 이에 대해서는 [다음](/spring%20boot/커스텀-User-Detail-적용하기-그리고-Custom-Security-테스트-코드-2/)에 다룬다.
